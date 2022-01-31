@@ -8,6 +8,11 @@ body {
   min-height: 100vh;
   align-items: center;
 }
+
+.character:nth-child(1) {
+  display: none;
+}
+
 .character {
   width: 20%;
   flex-basis: auto;
@@ -95,4 +100,9 @@ body {
   position: absolute;
   right: 5px;
   top: 5px;
+  padding-right: 10px;
+}
+
+.hidden {
+  display: none;
 }
