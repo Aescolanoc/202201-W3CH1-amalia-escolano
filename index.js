@@ -1,9 +1,5 @@
 import { characters } from './modules/characters.js';
 
-document.addEventListener('DOMContentLoaded', createCard, false);
-// const deathBtn = document.querySelector('.character__action--die');
-// deathBtn.addEventListener('click', () => {});
-
 characters.forEach((element) => {
   const template = createCard(element);
   const newLi = document.createElement('li');
@@ -54,8 +50,8 @@ function createCard(character) {
             <li>Sirve a: ${character.patron}</li>
           </ul>
           <div class="character__actions">
-            <button class="character__action--talk btn">habla</button>
-            <button class="character__action--die btn">muere</button>
+            <button class="character__action btn talk">habla</button>
+            <button class="character__action btn die">muere</button>
           </div>
         </div>
       </div>
